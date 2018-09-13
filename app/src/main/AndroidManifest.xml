@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uga.eits.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="adjustPan"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity" android:windowSoftInputMode="adjustPan" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!--prod and test key should be picked up from google_maps_api.xml file don't hard code value above  -->
+        <!-- prod AIzaSyA0VeHjrUrM0Bu2eIw9cMbOnjuqzdz7aBI -->
+        <!-- test AIzaSyDjnE8qpM40-OGHBOvyDxZa57OjwFPAkII -->
+
+
+
+        <activity android:name=".DetailViewActivity" />
+        <activity android:name=".TabsActivity"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+    </application>
+
+</manifest>

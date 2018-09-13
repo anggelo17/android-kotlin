@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingStart="5dp"
+        tools:text="Title." />
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:textColor="#343434"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:paddingStart="10dp"
+        android:paddingEnd="40dp"
+        tools:text="subtitle" />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textColor="#757575"
+        android:textSize="10dp"
+        tools:ignore="SmallSp"
+        tools:text="512 ft"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/right_chevron"
+        android:paddingRight="5dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_chevron"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ask_uga_submitted"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="Your question will be sent to the UGA Student Government Association (SGA)!"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView5"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6" />
+        <TextView
+            android:text="Check your email for an answer soon."
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/textView5"
+            android:id="@+id/textView6"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/ask_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/colorPrimary"
+            fancy:fb_focusColor="@color/colorPrimaryDark"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="30dp"
+            android:layout_marginTop="16dp"
+            fancy:fb_text="Ask Another Question"
+            fancy:fb_textColor="#FFFFFF" />
+
+    </LinearLayout>
+    <include layout="@layout/element_bottom_navigation"/>
+</RelativeLayout>

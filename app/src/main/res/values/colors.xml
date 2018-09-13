@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d1282d</color>
+    <color name="colorPrimaryDark">#980005</color>
+    <color name="colorAccent">#ff6157</color>
+
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+    <color name="focus_cell_color">#50ff2020</color>
+    <color name="no_color">#00000000</color>
+</resources>

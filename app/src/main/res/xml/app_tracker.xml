@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!--&lt;!&ndash; The screen names that will appear in reports &ndash;&gt;-->
+    <!--<screenName name=".com.example.android.prototype1.BusTrackerActivity.bus_tracker_activity.BusTracker">-->
+        <!--BusTrackerActivity-->
+    <!--</screenName>-->
+    <!--<screenName name=".com.example.android.prototype1.BusTrackerActivity.bus_tracker_route_view.RouteView">-->
+        <!--RouteViewActivity-->
+    <!--</screenName>-->
+    <!--  The following value should be replaced with correct property id. -->
+    <string name="ga_trackingId">UA-68522441-2</string>
+</resources>

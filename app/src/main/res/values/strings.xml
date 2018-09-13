@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">UGA</string>
+    <string name="title_activity_test">testActivity</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_activity_bottom_">Bottom_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_uga_bus">Bus</string>
+    <string name="title_campus_map">Campus</string>
+    <string name="title_uga_email">Settings</string>
+
+
+    <string name="title_activity_maps">Campus</string>
+
+    <string name="title_activity_athens_bus_maps">Athens Transit</string>
+
+    <string-array name="ask_categories">
+        <item>Dining</item>
+        <item>Parking</item>
+        <item>Transportation</item>
+        <item>Academics</item>
+        <item>Facilities</item>
+        <item>Safety</item>
+        <item>Advising</item>
+        <item>Game Day</item>
+        <item>Other</item>
+    </string-array>
+    <string name="fingerPrint_option">Use your fingerprint to single sign on</string>
+    <string name="fingerPrint_title">FingerPrint</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="fingerprint_authenticate_success">Successfully authenticated!</string>
+    <string name="register_success">Successfully registered!</string>
+    <string name="fingerprint_authenticate_fail">Authentication failed!</string>
+    <string name="register_fail">Registration failed!</string>
+    <string name="fingerprint_description">Confirm your fingerprint</string>
+    <string name="description_fingerprint_icon">Fingerprint icon</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="map_style">"[{\"featureType\":\"poi.attraction\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.attraction\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.business\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.business\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.government\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.government\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.medical\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.medical\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.park\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.place_of_worship\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.school\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.school\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.sports_complex\",\"elementType\":\"labels\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"poi.sports_complex\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"road\",\"elementType\":\"labels.text\",\"stylers\":[{\"lightness\":40},{\"weight\":0.1}]},{\"featureType\":\"transit.station.bus\",\"elementType\":\"labels.icon\",\"stylers\":[{\"visibility\":\"off\"}]},{\"featureType\":\"road.local\",\"elementType\":\"labels.text\",\"stylers\":[{\"visibility\":\"off\"}]}]"</string>
+
+
+</resources>

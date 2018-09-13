@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uga.eits.android.MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topNavMenu"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <FrameLayout
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_marginTop="90dp"
+            android:layout_width="85dp"
+            android:id="@+id/legend_content"
+            android:background="@drawable/rounded_rectangle"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+    <LinearLayout
+        android:id="@+id/topNavMenu"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <TextView
+            android:id="@+id/routesNav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#0076FF"
+            android:text="Routes"/>
+
+        <TextView
+            android:id="@+id/favoritesNav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textColor="#0076FF"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Favorites"/>
+
+        <TextView
+            android:id="@+id/placesNav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#0076FF"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Places"/>
+    </LinearLayout>
+    <include layout="@layout/element_bottom_navigation" android:id="@+id/bottom_navigation"/>
+</RelativeLayout>

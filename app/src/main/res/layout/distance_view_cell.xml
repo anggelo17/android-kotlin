@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:padding="5dip">
+    <LinearLayout
+        android:layout_alignParentStart="true"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="Stop Name"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active Routes: ECX, AH, EW, O"
+            android:textColor="@color/colorAccent"
+            android:textSize="10sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="4dp"
+            android:text="0.7"
+            android:textColor="#8DCB99"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="2dp"
+            >
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="miles"
+                android:textColor="#8DCB99"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="walk"
+                android:textColor="#8DCB99"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/detailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:orientation="horizontal"
+    android:padding="0dip"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <edu.uga.eits.android.ui.DrawingView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="?android:attr/colorMultiSelectHighlight" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingStart="5dp"
+        android:layout_marginStart="50dp"
+        tools:text="Title." />
+
+    <TextView
+        android:id="@+id/boldSubTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:paddingEnd="40dp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="0dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:ignore="SmallSp"
+        tools:text="boldsubtitle" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/boldSubTitle"
+        android:layout_alignBottom="@+id/boldSubTitle"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="120dp"
+        android:paddingEnd="40dp"
+        android:paddingStart="10dp"
+        android:textColor="#8DCB99"
+        android:textSize="14dp"
+        tools:ignore="SmallSp"
+        tools:text="subtitle" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#8DCB99"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="512 ft"
+        android:paddingRight="4dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
